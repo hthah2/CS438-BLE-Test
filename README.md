@@ -1,12 +1,12 @@
 # CS438-BLE-Test
 ESP32 BLE Latency Measurement (Client and Server)
 
-Overview:
+# Overview:
 This project demonstrates Bluetooth Low Energy (BLE) communication between two ESP32 devices. One ESP32 acts as a BLE server, sending timestamped messages, while the other acts as a BLE client, receiving those messages and calculating the latency based on timestamp comparisons.
 
-Features:
+# Features:
 
-BLE Server:
+# BLE Server:
 
 Advertises a custom BLE service and characteristic.
 
@@ -14,7 +14,7 @@ Sends messages with a timestamp using micros().
 
 Transmits data every 3 seconds.
 
-BLE Client:
+# BLE Client:
 
 Scans for the server named "Hello_BLE".
 
@@ -22,7 +22,7 @@ Connects and subscribes to notifications.
 
 Parses the timestamped message and computes latency in microseconds.
 
-Hardware Requirements:
+# Hardware Requirements:
 
 Two ESP32 development boards (such as ESP32-WROOM-32)
 
@@ -52,15 +52,13 @@ Service UUID: 91bad492-b950-4226-aa2b-4ede9fa42f59
 
 Characteristic UUID: beb5483e-36e1-4688-b7f5-ea07361b26a8
 
-Directory Structure:
-/ESP32-BLE-Latency/
 
-client.ino (BLE client code to receive and compute latency)
+BLE_client.ino (BLE client code to receive and compute latency)
 
-server.ino (BLE server code to send timestamped messages)
+BLE_server.ino (BLE server code to send timestamped messages)
 
 
-Example Serial Output:
+# Example Serial Output:
 Client:
 Server found. Connecting!
 Connected to server
