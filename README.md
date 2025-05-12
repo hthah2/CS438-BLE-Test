@@ -59,7 +59,6 @@ client.ino (BLE client code to receive and compute latency)
 
 server.ino (BLE server code to send timestamped messages)
 
-README.txt (This readme file)
 
 Example Serial Output:
 Client:
@@ -72,4 +71,3 @@ Server:
 Waiting for a client...
 Sent timestamped message
 Sent timestamped message
-
